@@ -19,3 +19,16 @@ models:
         data_tests:
           - unique
           - not_null
+        
+  - name: example_teams
+    description: "some NBA teams"
+    columns:
+      - name: Team
+        description: "The primary key for this table"
+
+  - name: example_teams_details
+    columns:
+      - name: city
+        tests:
+        - is_los_angeles
+
