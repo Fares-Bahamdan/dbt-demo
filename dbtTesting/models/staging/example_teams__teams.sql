@@ -6,6 +6,8 @@ with teams as (
     select '76ers' as Teams
     union all
     select 'Heat' as Teams
+    union all
+    select 'Bulls' as Teams
 )
 
 select *
