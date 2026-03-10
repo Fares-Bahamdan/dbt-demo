@@ -3,7 +3,7 @@ version: 2
 
 models:
   - name: my_first_dbt_model
-    description: "A starter dbt model"
+    description: '{{ doc("table_events") }}'
     columns:
       - name: id
         description: "The primary key for this table"
@@ -20,7 +20,7 @@ models:
           - unique
           - not_null
         
-  - name: example_teams
+  - name: example_teams__teams
     description: "some NBA teams"
     columns:
       - name: Team
