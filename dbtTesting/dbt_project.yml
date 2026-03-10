@@ -43,6 +43,7 @@ models:
     staging:
       +materialized: view
       +schema: staging
+      +query_tag: dbt_special
     snowflake_sample_data:
       +materialized: view
       +schema: staging
